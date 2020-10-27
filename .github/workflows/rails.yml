@@ -1,0 +1,15 @@
+name: Ruby
+
+on: [push]
+
+jobs:
+
+  build:
+    runs-on: ubuntu-latest
+
+    container:
+      image: ruby:2.6.4
+
+    steps:
+      - uses: actions/checkout@v1
+      - run: echo 'hoge'
